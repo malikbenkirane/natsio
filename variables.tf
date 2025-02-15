@@ -4,3 +4,6 @@ variable "svctl_container_image" {
 variable "namespace" {
   default = "natsio-demo"
 }
+variable "nats_namespace" {
+  default = "nats"
+}
