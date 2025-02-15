@@ -1,6 +1,7 @@
 resource "kubernetes_deployment" "svctl" {
   metadata {
     name = "svctl"
+    namespace = kubernetes_namespace.namespace.metadata[0].name
   }
 
   spec {
