@@ -1,0 +1,3 @@
+variable "svctl_container_image" {
+  default = "localhost:5501/natsio/svctl"
+}
