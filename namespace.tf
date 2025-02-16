@@ -3,8 +3,10 @@ resource "kubernetes_namespace" "namespace" {
     name = var.namespace
   }
 }
-resource "kubernetes_namespace" "nats_namespace" {
-  metadata {
-    name = var.nats_namespace
-  }
-}
+
+# fixme see also nats.tf
+#resource "kubernetes_namespace" "nats_namespace" {
+#  metadata {
+#    name = var.nats_namespace
+#  }
+#}
