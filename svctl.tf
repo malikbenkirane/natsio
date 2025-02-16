@@ -22,8 +22,13 @@ resource "kubernetes_deployment" "svctl" {
 
       spec {
         container {
+	  command = ["/svctl", "serve"]
           name  = "svctl"
           image = var.svctl_container_image
+	  env {
+	    name = "NATS_URL"
+	    value = var.nats_url
+	  }
         }
       }
     }

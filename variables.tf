@@ -7,3 +7,6 @@ variable "namespace" {
 variable "nats_namespace" {
   default = "nats"
 }
+variable "nats_url" {
+  default = "nats://nats.nats.svc.cluster.local:4222"
+}
